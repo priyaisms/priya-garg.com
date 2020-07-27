@@ -9,7 +9,7 @@ import React from "react"
 export default class MailChimpForm extends React.Component {
   constructor() {
     super()
-    this.state = { email: "", result: "",name: null,}
+    this.state = { email: "",name: null,subscribed: false,}
   }
   _handleSubmit = async e => {
     e.preventDefault()
@@ -33,8 +33,8 @@ handleChange = event => {
     this.setState({ email: event.target.value })
   }
 render() {
-    return (
-    // this.state.result === "success" ? (
+    return ( 
+    // this.state.subscribed === false ? (
     //   <div>You've been subscribed!</div>
     // ) : this.state.result === "error" ? (
     //   <div>Oops...there's been an error. You may already be subscribed, or you can re-try.</div>
