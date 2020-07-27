@@ -9,7 +9,7 @@ import React from "react"
 export default class MailChimpForm extends React.Component {
   constructor() {
     super()
-    this.state = { email: "", result: null }
+    this.state = { email: "", result: "" }
   }
   _handleSubmit = async e => {
     e.preventDefault()
