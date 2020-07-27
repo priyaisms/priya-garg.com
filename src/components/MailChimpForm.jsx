@@ -9,7 +9,7 @@ import React from "react"
 export default class MailChimpForm extends React.Component {
   constructor() {
     super()
-    this.state = { email: "",name: null,subscribed: false,}
+    this.state = { email: "",name: null,subscribed: false,text:"Get notified when I post (less than 10 emails a year)"}
   }
   _handleSubmit = async e => {
     e.preventDefault()
@@ -19,29 +19,25 @@ export default class MailChimpForm extends React.Component {
     .then(({msg, result}) => {
       console.log('msg', `${result}: ${msg}`);
       if (result !== 'success') {
-        this.setState({text: 'You might already be subscribed. Try again!'});
+        this.setState({text: 'Uh oh...an error occurred. Try again. If the error persists, you may already be subscribed.'});
       } else {
         this.setState({subscribed: true, text: 'Thanks for subscribing!'});
       }
     })
     .catch(err => {
       console.log('err', err);
-      // this.setState({text: err});
     });
   }
 handleChange = event => {
     this.setState({ email: event.target.value })
   }
 render() {
-    return ( 
-    // this.state.subscribed === false ? (
-    //   <div>You've been subscribed!</div>
-    // ) : this.state.result === "error" ? (
-    //   <div>Oops...there's been an error. You may already be subscribed, or you can re-try.</div>
-    // ) :
-    
+
+    return  [
+<div style={{alignItems: 'center'}}>{this.state.text}</div>,
       <form onSubmit={this._handleSubmit}>
-            <label> Get notified when I post (less than 10 emails a year) </label>
+        {/* <div style={{alignItems: 'center'}}>{this.state.text}</div> */}
+        {/* <label> {this.state.text} </label>  */}
   <br/>
         <TextField
           id="outlined-email-input"
@@ -62,6 +58,7 @@ render() {
           <Typography variant="button">Submit</Typography>
         </Button>
       </form>
-    )
+      
+    ]
   }
 }
