@@ -9,22 +9,37 @@ import React from "react"
 export default class MailChimpForm extends React.Component {
   constructor() {
     super()
-    this.state = { email: "", result: "" }
+    this.state = { email: "", result: "",name: null,}
   }
   _handleSubmit = async e => {
     e.preventDefault()
-    const result = await addToMailchimp(this.state.email)
-    this.setState({result: result})
+    // const result = await addToMailchimp(this.state.email)
+    // this.setState({result: result})
+    addToMailchimp(this.state.email, {name: this.state.name})
+    .then(({msg, result}) => {
+      console.log('msg', `${result}: ${msg}`);
+      if (result !== 'success') {
+        this.setState({text: 'You might already be subscribed. Try again!'});
+      } else {
+        this.setState({subscribed: true, text: 'Thanks for subscribing!'});
+      }
+    })
+    .catch(err => {
+      console.log('err', err);
+      // this.setState({text: err});
+    });
   }
 handleChange = event => {
     this.setState({ email: event.target.value })
   }
 render() {
-    return this.state.result === "success" ? (
-      <div>You've been subscribed!</div>
-    ) : this.state.result === "error" ? (
-      <div>Oops...there's been an error. You may already be subscribed, or you can re-try.</div>
-    ) :( 
+    return (
+    // this.state.result === "success" ? (
+    //   <div>You've been subscribed!</div>
+    // ) : this.state.result === "error" ? (
+    //   <div>Oops...there's been an error. You may already be subscribed, or you can re-try.</div>
+    // ) :
+    
       <form onSubmit={this._handleSubmit}>
             <label> Get notified when I post (less than 10 emails a year) </label>
   <br/>
