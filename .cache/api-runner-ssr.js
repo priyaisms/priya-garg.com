@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('/Users/priyagarg/Desktop/projects/priyaisms.github.io/node_modules/gatsby-plugin-material-ui/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/Users/priyagarg/Desktop/projects/priyaisms.github.io/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"UA-173524993-1"},
     },{

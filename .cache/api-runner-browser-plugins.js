@@ -2,6 +2,9 @@ module.exports = [{
       plugin: require('../node_modules/gatsby-remark-images/gatsby-browser.js'),
       options: {"plugins":[],"maxWidth":590},
     },{
+      plugin: require('../node_modules/gatsby-plugin-material-ui/gatsby-browser.js'),
+      options: {"plugins":[]},
+    },{
       plugin: require('../node_modules/gatsby-plugin-google-analytics/gatsby-browser.js'),
       options: {"plugins":[],"trackingId":"UA-173524993-1"},
     },{
