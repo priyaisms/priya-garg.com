@@ -21,9 +21,9 @@ handleChange = event => {
   }
 render() {
     return this.state.result === "success " ? (
-      <div>SUCCESS</div>
+      <div> You've been subscribed! </div>
     ) : this.state.result === "error" ? (
-      <div>ERROR</div>
+      <div> Oops...there's been an error. You may already be subscribed, or you can re-try. </div>
     ) :( 
       <form onSubmit={this._handleSubmit}>
             <label> Get notified when I post (less than 10 emails a year) </label>
