@@ -1,6 +1,6 @@
 ---
 title: We Need to Rethink Everything About American History
-date: "2020-07-21"
+date: "2020-07-23"
 description: Or, "What They Didn't Teach You About Black History." We may have beat the Nazis in WWII, but is Germany beating us at charting a path forward?
 tags: ["history"]
 templateKey: blog-post
@@ -68,7 +68,7 @@ Unlike the Nuremberg trials, he went after minor officials--doctors, judges, low
 
 ![Holocaust memorial day vs Confederate Memorial](./num5.png)
 
-Of course, Germany is not perfect. Especially recently, some Germans are [concerned](https://www.theatlantic.com/international/archive/2019/04/germany-far-right-holocaust-education-survivors/586357/) that the “culture of [Halocaust] remembrance is crumbling”. An anti-semitic far-right political group has gained some momentum. But still, when [asked in a recent poll](https://www.dw.com/en/germans-want-to-uphold-culture-of-holocaust-remembrance/a-52125596) whether it was time to close the chapter on Nazi crimes, 60% of German respondents said it was important to remember the past.
+Of course, Germany is not perfect. Especially recently, some Germans are [concerned](https://www.theatlantic.com/international/archive/2019/04/germany-far-right-holocaust-education-survivors/586357/) that the “culture of [Halocaust] remembrance is crumbling.” An anti-semitic far-right political group has gained some momentum. But still, when [asked in a recent poll](https://www.dw.com/en/germans-want-to-uphold-culture-of-holocaust-remembrance/a-52125596) whether it was time to close the chapter on Nazi crimes, 60% of German respondents said it was important to remember the past.
 
 ## “Sure, we screwed the pooch on this one. But that’s just one example, and it was a different time. We’re better at dealing with these things now.”
 
@@ -86,7 +86,7 @@ As any parent says to a child who’s done something regrettable: it’s normal 
 
 #### After all, those that fail to study history are doomed to repeat it.
 
-Repentance is an ongoing process, and we shouldn’t be seeking silver bullets that will allow us to “move on”. In order to chart a course for what reconciliation, we need to better understand the nature of our sins. We need to weave our failures into the fabric of our historical narratives. 
+Repentance is an ongoing process, and we shouldn’t be seeking silver bullets that will allow us to “move on.” In order to chart a course for what reconciliation, we need to better understand the nature of our sins. We need to weave our failures into the fabric of our historical narratives. 
 
 #### America is based on ideals of reinvention, of always striving for better. We will always falter and fail. How best do we ensure survival and continuous improvement? Simple: by holding our failures up in the light, examining them side-by-side with our successes, and appreciating the reality of both. 
 

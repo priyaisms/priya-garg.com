@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import MailchimpForm from "../components/MailchimpForm"
+import { rhythm, scale } from "../utils/typography"
 
 class PageTemplate extends React.Component {
   render() {
@@ -17,6 +19,16 @@ class PageTemplate extends React.Component {
         />
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        
+        <footer>
+        <hr
+          style={{
+            marginBottom: rhythm(1),
+          }}
+        />
+          {/* <Bio/> */}
+          <MailchimpForm />
+        </footer>
       </Layout>
     )
   }

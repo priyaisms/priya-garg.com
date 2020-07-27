@@ -5,6 +5,7 @@ import kebabCase from "lodash.kebabcase"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import MailchimpForm from "../components/MailchimpForm"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -40,14 +41,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>  
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <footer>
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
-        {/* <footer>
-          <Bio />
-        </footer> */}
+          {/* <Bio/> */}
+          <MailchimpForm />
+        </footer>
       </article>
 
       <nav>

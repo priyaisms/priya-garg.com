@@ -27,6 +27,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+          endpoint: 'https://priya-garg.us17.list-manage.com/subscribe/post?u=b2d980cb30bb86737661cf9dd&amp;id=7bd1b2654d', 
+      },
+  },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -36,6 +42,7 @@ module.exports = {
               maxWidth: 590,
             },
           },
+          `gatsby-plugin-material-ui`,
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
@@ -66,7 +73,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/logo.png`,
       },
     },
     `gatsby-plugin-react-helmet`,

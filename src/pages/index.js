@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import kebabCase from "lodash/kebabCase"
 import { rhythm } from "../utils/typography"
+import MailchimpForm from "../components/MailchimpForm"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -48,6 +49,14 @@ const BlogIndex = ({ data, location }) => {
           </article>
         )
       })}
+      <footer>
+      <hr
+          style={{
+            marginBottom: rhythm(1),
+          }}
+        />
+                <MailchimpForm />
+        </footer>
     </Layout>
   )
 }
