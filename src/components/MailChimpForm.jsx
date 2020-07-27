@@ -20,10 +20,10 @@ handleChange = event => {
     this.setState({ email: event.target.value })
   }
 render() {
-    return this.state.result === "success " ? (
-      <div> You've been subscribed! </div>
+    return this.state.result === "success" ? (
+      <div>You've been subscribed!</div>
     ) : this.state.result === "error" ? (
-      <div> Oops...there's been an error. You may already be subscribed, or you can re-try. </div>
+      <div>Oops...there's been an error. You may already be subscribed, or you can re-try.</div>
     ) :( 
       <form onSubmit={this._handleSubmit}>
             <label> Get notified when I post (less than 10 emails a year) </label>
